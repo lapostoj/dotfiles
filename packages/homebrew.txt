@@ -1,0 +1,5 @@
+git
+node
+tree
+wget
+zsh

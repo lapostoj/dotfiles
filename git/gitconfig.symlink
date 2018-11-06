@@ -1,0 +1,26 @@
+# Uses VSCode as an editor and difftool.
+[user]
+  name = Jerome Lapostolet
+  email = jerome.lapostolet@transferwise.com
+  username = lapostoj
+[credential]
+  helper = osxkeychain
+[core]
+  editor = code --wait
+  excludesfile = ~/.gitignore
+[alias]
+  graph = log --graph --decorate --oneline --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+  diffmaster = diff master --name-only
+[push]
+  default = simple
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+[diff]
+  tool = default-difftool
+[difftool "default-difftool"]
+  cmd = code --wait --diff $LOCAL $REMOTE
+[branch]
+  autosetuprebase = always

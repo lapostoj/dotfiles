@@ -1,0 +1,5 @@
+google-chrome
+iterm2
+spotify
+the-unarchiver
+visual-studio-code
