@@ -6,4 +6,3 @@ alias reload='. ~/.zshrc'
 alias ls='ls -GF'
 alias ll='ls -ahlF'
 alias la='ls -A'
-

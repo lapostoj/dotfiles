@@ -1,0 +1,60 @@
+--- Brew Updates ---
+brew update
+brew outdated
+brew upgrade
+brew cleanup -n
+
+--- Npm Updates ---
+npm list --depth=0
+npm outdated --depth=0
+npm update --save
+
+--- MacOSX Shortcuts ---
+Display/Hide hidden files   Cmd + Shift + .
+
+--- Intellij Shortcuts ---
+Align several lines                   Alt + Cmd + L
+Refactor menu                         Ctrl + T
+Create test file or go to test file   Cmd + Shift + T
+
+--- VSCode Shortcuts ---
+Format file   Alt + Shift + F
+
+--- SCP ---
+scp -r user@server.example.com:/path/to/foo ~/Downloads/
+
+--- Look into logs ---
+Keep tailing new entries            tail -f file
+Search for keywords                 grep -H keyword file
+Search for keywords with context    grep -H -C 10 keyword file
+
+--- Check Disk Space Problems ---
+See orverall space          df -h
+See size of a folder/file   du -sh path
+
+--- Gradle management ---
+./gradlew dependencies > dependencies.txt
+./gradlew -q dependencyInsight --dependency DEPENDENCY_NAME
+
+./gradlew wrapper --gradle-version 4.10.2 --distribution-type all
+
+--- Define ssh shortcut ---
+If you need to connect to user@logs-server.domain.com
+Add in ~/.ssh
+
+Host name
+HostName logs-server.domain.com
+User user
+Port 8888
+IdentityFile PRIVATE_KEY
+
+And then `ssh name` to use it
+
+--- PostGres json querying and casting ---
+select * from table t where ((t.json_field::json->'object')::json->'numberField')::text::int = 1
+
+--- Utils commands ---
+See what is running on port           lsof -i :8080
+See java processes                    pgrep java
+Kill java processes                   killall -9 java
+Add ssh key (for github for example)  ssh-add -K
