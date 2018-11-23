@@ -1,7 +1,7 @@
 # Uses VSCode as an editor and difftool.
 [user]
   name = Jerome Lapostolet
-  email = jerome.lapostolet@transferwise.com
+  email = jerome.lapostolet@gmail.com
   username = lapostoj
 [credential]
   helper = osxkeychain
