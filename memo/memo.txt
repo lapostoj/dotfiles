@@ -1,9 +1,3 @@
---- Brew Updates ---
-brew update
-brew outdated
-brew upgrade
-brew cleanup -n
-
 --- Npm Updates ---
 npm list --depth=0
 npm outdated --depth=0
