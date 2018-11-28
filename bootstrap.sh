@@ -139,7 +139,7 @@ update_macos () {
   success 'Updating macOS'
 }
 
-updating_macos () {
+set_defaults_macos () {
   info 'Setting macOS defaults'
   "$DOTFILES_ROOT"/macos/set_defaults.sh
   success 'Setting macOS defaults'
