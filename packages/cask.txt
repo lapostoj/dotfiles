@@ -1,5 +1,9 @@
 google-chrome
+gpg-suite
+intellij-idea
 iterm2
+java
+slack
 spotify
 the-unarchiver
 visual-studio-code
