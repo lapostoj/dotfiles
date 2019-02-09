@@ -13,7 +13,7 @@
   diffmaster = diff master --name-only
   promote = !git push --set-upstream origin $(git symbolic-ref --short HEAD)
   last-change = !git log -1 -- $1
-  clean-remote-branches = remote prune origin
+  cleanup = !git branch -D $1 && git remote prune origin && :
 [push]
   default = simple
 [filter "lfs"]

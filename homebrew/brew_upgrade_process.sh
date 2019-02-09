@@ -17,6 +17,16 @@ append_to_changelog "$(brew list --versions)"
 echo "🍺 Updating brew."
 brew update
 
+echo "👴 Outdated apps"
+brew outdated
+
+echo "❓ Continue?"
+read continuing
+
+if [ "$continuing" != "yes" ]
+then exit 1
+fi
+
 header "OUTDATED"
 append_to_changelog "$(brew outdated)"
 

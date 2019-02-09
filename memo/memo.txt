@@ -44,6 +44,9 @@ IdentityFile PRIVATE_KEY
 
 And then `ssh name` to use it
 
+--- MySQL ---
+mysql --host 127.0.0.1 -u username --password --port 3306 --database db_name
+
 --- PostGres json querying and casting ---
 select * from table t where ((t.json_field::json->'object')::json->'numberField')::text::int = 1
 

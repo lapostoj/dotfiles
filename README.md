@@ -15,7 +15,6 @@ This repository is based on the dotfiles from [@holman](https://github.com/holma
 
 - `git clone git@github.com:lapostoj/dotfiles.git ~/.dotfiles`
 - `~/.dotfiles/bootstrap.sh`
-- `~/.dotfiles/install.sh`
 - `cat ~/.dotfiles/packages/homebrew.txt | xargs brew install` (to repeat for the different package managers present in the folder)
 
 Based on the user's input, this will symlink the appropriate files in `.dotfiles` to your home directory as well as install and or update the listes dependencies and applications.

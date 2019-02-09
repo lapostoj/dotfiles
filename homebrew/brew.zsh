@@ -3,3 +3,5 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 
 # Customized commands
 alias brew-upgrade-process='$DOTFILES/homebrew/brew_upgrade_process.sh'
+
+alias cask-oudated='brew cask outdated  --greedy'
