@@ -4,5 +4,7 @@
   "editor.tabSize": 2,
   "editor.renderWhitespace": "all",
   "window.zoomLevel": 0,
-  "extensions.ignoreRecommendations": false
+  "extensions.ignoreRecommendations": false,
+  "eslint.alwaysShowStatus": true,
+  "eslint.autoFixOnSave": true
 }
