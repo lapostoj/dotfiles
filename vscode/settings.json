@@ -22,5 +22,15 @@
     "enabled": true,
     "args": []
   },
-  "[terraform]": {}
+  "[terraform]": {},
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "python.jediEnabled": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "workbench.startupEditor": "welcomePage",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
 }
