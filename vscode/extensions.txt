@@ -1,6 +1,15 @@
 ban.spellright
+davidanson.vscode-markdownlint
 dbaeumer.vscode-eslint
+dotjoshjohnson.xml
 eamodio.gitlens
 editorconfig.editorconfig
+esbenp.prettier-vscode
+jpoissonnier.vscode-styled-components
 mauve.terraform
+mohsen1.prettify-json
+ms-azuretools.vscode-docker
+ms-python.python
 ms-vscode.go
+tyriar.sort-lines
+visualstudioexptteam.vscodeintellicode
