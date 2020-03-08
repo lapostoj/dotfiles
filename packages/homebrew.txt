@@ -1,7 +1,10 @@
+dive
 git
+go
 jq
 node
 python
+terraform
 tree
 wget
 zsh

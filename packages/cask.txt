@@ -1,9 +1,15 @@
+calibre
+docker
 google-chrome
+google-cloud-sdk
 gpg-suite
 intellij-idea
 iterm2
 java
+postman
+sequel-pro
 slack
 spotify
 the-unarchiver
 visual-studio-code
+vlc
