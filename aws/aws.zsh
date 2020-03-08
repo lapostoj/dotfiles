@@ -1,1 +1,1 @@
-alias ecr-login='$(aws ecr get-login --no-include-email)'
+alias ecr-login='aws ecr get-login-password | docker login --username AWS --password-stdin $ECR_URL'
