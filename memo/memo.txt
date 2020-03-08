@@ -26,11 +26,14 @@ Search for keywords with context    grep -H -C 10 keyword file
 See orverall space          df -h
 See size of a folder/file   du -sh path
 
---- Gradle management ---
+--- Gradle ---
 ./gradlew dependencies > dependencies.txt
 ./gradlew -q dependencyInsight --dependency DEPENDENCY_NAME
 
-./gradlew wrapper --gradle-version 4.10.2 --distribution-type all
+./gradlew wrapper --gradle-version 6.2.2 --distribution-type all
+
+--- Maven ---
+./mvnw dependency:tree
 
 --- Define ssh shortcut ---
 If you need to connect to user@logs-server.domain.com
@@ -46,9 +49,16 @@ And then `ssh name` to use it
 
 --- MySQL ---
 mysql --host 127.0.0.1 -u username --password --port 3306 --database db_name
+select json_unquote(json_extract(column, '$.field')) from table
 
 --- PostGres json querying and casting ---
 select * from table t where ((t.json_field::json->'object')::json->'numberField')::text::int = 1
+
+--- Spring Boot see where a bean comes from ---
+@Autowired
+private GenericApplicationContext ctx;
+[...]
+final String resourceDescription = ctx.getBeanFactory().getBeanDefinition("beanName").getResourceDescription();
 
 --- Utils commands ---
 See what is running on port           lsof -i :8080
