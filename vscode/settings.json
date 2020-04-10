@@ -3,12 +3,23 @@
   "editor.wordWrap": "off",
   "editor.tabSize": 2,
   "editor.renderWhitespace": "all",
-  "window.zoomLevel": 0,
-  "extensions.ignoreRecommendations": false,
-  "eslint.alwaysShowStatus": true,
-  "eslint.autoFixOnSave": true,
+  "editor.suggestSelection": "first",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.prettier": true,
+    "source.fixAll.markdownlint": true
+  },
   "breadcrumbs.enabled": true,
+  "extensions.ignoreRecommendations": false,
+  "files.associations": {
+    "*.rmd": "markdown"
+  },
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.startupEditor": "welcomePage",
+  "window.zoomLevel": 0,
+  "eslint.alwaysShowStatus": true,
   "go.useLanguageServer": true,
+  "python.jediEnabled": false,
   "terraform.indexing": {
     "enabled": false,
     "liveIndexing": false,
@@ -22,15 +33,8 @@
     "enabled": true,
     "args": []
   },
-  "[terraform]": {},
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "python.jediEnabled": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "workbench.startupEditor": "welcomePage",
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
-  }
+  },
+  "[terraform]": {}
 }

@@ -1,4 +1,3 @@
-ban.spellright
 davidanson.vscode-markdownlint
 dbaeumer.vscode-eslint
 dotjoshjohnson.xml
@@ -11,5 +10,7 @@ mohsen1.prettify-json
 ms-azuretools.vscode-docker
 ms-python.python
 ms-vscode.go
+streetsidesoftware.code-spell-checker
 tyriar.sort-lines
 visualstudioexptteam.vscodeintellicode
+yzhang.markdown-all-in-one
