@@ -4,21 +4,14 @@
   "editor.tabSize": 2,
   "editor.renderWhitespace": "all",
   "editor.suggestSelection": "first",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll.prettier": true,
-    "source.fixAll.markdownlint": true
-  },
   "breadcrumbs.enabled": true,
   "extensions.ignoreRecommendations": false,
   "files.associations": {
     "*.rmd": "markdown"
   },
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "workbench.startupEditor": "welcomePage",
   "window.zoomLevel": 0,
   "eslint.alwaysShowStatus": true,
-  "go.useLanguageServer": true,
   "python.jediEnabled": false,
   "terraform.indexing": {
     "enabled": false,
@@ -30,11 +23,48 @@
     ]
   },
   "terraform.languageServer": {
-    "enabled": true,
-    "args": []
+    "external": true,
+    "args": [
+      "serve"
+    ]
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "[terraform]": {}
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+"prettier.singleQuote": true,
+"python.languageServer": "Microsoft",
+"cSpell.enableFiletypes": [
+  "!cpp",
+  "!csharp",
+  "!handlebars",
+  "!haskell",
+  "!jade",
+  "!jsonc",
+  "!latex",
+  "!php",
+  "!pug",
+  "!restructuredtext",
+  "go.mod",
+  "go.sum"
+],
+"javascript.updateImportsOnFileMove.enabled": "always",
+"[typescriptreact]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"files.exclude": {
+  "**/.classpath": true,
+  "**/.project": true,
+  "**/.settings": true,
+  "**/.factorypath": true
+},
+"workbench.editorAssociations": {
+  "*.ipynb": "jupyter.notebook.ipynb"
+},
+"go.toolsManagement.autoUpdate": true
 }
