@@ -38,7 +38,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 "prettier.singleQuote": true,
-"python.languageServer": "Microsoft",
 "cSpell.enableFiletypes": [
   "!cpp",
   "!csharp",
@@ -64,7 +63,15 @@
   "**/.factorypath": true
 },
 "workbench.editorAssociations": {
-  "*.ipynb": "jupyter.notebook.ipynb"
+  "*.ipynb": "jupyter-notebook"
 },
-"go.toolsManagement.autoUpdate": true
+"go.toolsManagement.autoUpdate": true,
+"notebook.cellToolbarLocation": {
+  "default": "right",
+  "jupyter-notebook": "left"
+},
+"[html]": {
+  "editor.defaultFormatter": "vscode.html-language-features"
+},
+"python.languageServer": "Microsoft"
 }
