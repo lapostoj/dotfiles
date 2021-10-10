@@ -1,4 +1,3 @@
-# Uses VSCode as an editor and difftool.
 [user]
   name = Jerome Lapostolet
   email = jerome.lapostolet@gmail.com
@@ -6,6 +5,7 @@
 [credential]
   helper = osxkeychain
 [core]
+  # Uses VSCode as an editor and difftool.
   editor = code --wait
   excludesfile = ~/.gitignore
 [alias]
@@ -27,3 +27,6 @@
   cmd = code --wait --diff $LOCAL $REMOTE
 [branch]
   autosetuprebase = always
+; replace with relevant workplace folder and config
+[includeIf "gitdir:~/work/"]
+  path = ~/.dotfiles/git/git-config-work.inc
