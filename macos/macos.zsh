@@ -1,0 +1,1 @@
+alias config-wifi-inoui='$DOTFILES/macos/config_wifi_inoui.sh'
