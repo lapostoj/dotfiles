@@ -1,9 +1,15 @@
+awscli
 dive
 git
 go
+gradle
 jq
+maven
 node
+openjdk
+openjdk@17
 python
+temurin
 terraform
 tree
 wget
