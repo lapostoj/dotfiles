@@ -73,5 +73,5 @@
 "[html]": {
   "editor.defaultFormatter": "vscode.html-language-features"
 },
-"python.languageServer": "Microsoft"
+"python.languageServer": "Default"
 }
