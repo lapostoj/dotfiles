@@ -2,6 +2,8 @@
   name = Jerome Lapostolet
   email = jerome.lapostolet@gmail.com
   username = lapostoj
+[init]
+  defaultBranch = main
 [credential]
   helper = osxkeychain
 [core]
