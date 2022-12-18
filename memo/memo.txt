@@ -65,3 +65,5 @@ See what is running on port           lsof -i :8080
 See java processes                    pgrep java
 Kill java processes                   killall -9 java
 Add ssh key (for github for example)  ssh-add -K
+Use a specific version of Java        export JAVA_HOME=`/usr/libexec/java_home -v 17`
+Use a specific version of nodeJS      export PATH=/usr/local/opt/node@16/bin:$PATH
